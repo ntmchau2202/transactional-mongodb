@@ -30,7 +30,7 @@ public class DatabaseOneConfig {
     @Bean(name = "entityOneMongoTemplate")
     public MongoTemplate entityOneMongoTemplate() throws Exception {
         MongoTemplate template = new MongoTemplate(entityOneMongoDatabaseFactory(getEntityOneProps()));
-        template.setSessionSynchronization(SessionSynchronization.ALWAYS);
+//        template.setSessionSynchronization(SessionSynchronization.ALWAYS);
         return template;
     }
 

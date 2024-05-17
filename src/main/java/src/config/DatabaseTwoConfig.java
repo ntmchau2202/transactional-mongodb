@@ -27,7 +27,7 @@ public class DatabaseTwoConfig {
     @Bean(name = "entityTwoMongoTemplate")
     public MongoTemplate entityTwoMongoTemplate() throws Exception {
         MongoTemplate template = new MongoTemplate(entityTwoMongoDatabaseFactory(getEntityTwoProps()));
-        template.setSessionSynchronization(SessionSynchronization.ALWAYS);
+//        template.setSessionSynchronization(SessionSynchronization.ALWAYS);
         return template;
     }
 
